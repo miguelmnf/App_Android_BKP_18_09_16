@@ -1,0 +1,544 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	}
+
+/*															      TOPO
+------------------------------------------------------------------------ */
+#topo{
+	width:1000px;
+	height:120px;
+	margin:0 auto; /* centralizar */
+	}
+#topoExp{
+	width:100%;
+	height:120px;
+	background-color:#32CD99;
+	}
+#logo{
+	width:152px;
+	height:41px;
+	float:left;
+	padding-top:25px;
+	}
+#menu{
+	width:660px;
+	height:30px;
+	float:right;
+	margin-top:35px;
+	}
+#menu ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+#menu ul li{
+ 	display:inline;
+	position:relative;
+	}
+#menu li ul{
+	display:none;
+	position:absolute;
+	left:0;
+	top:25px;
+	z-index:1;
+	width:300px;
+	color:#29ABC7;
+	background-color:WHITE;
+	}
+#menu li:hover ul,#menu li.over ul{
+	display:block;
+	}
+#menu ul li a{
+	text-decoration:none;
+	color:#000;
+	font-weight:600;
+	display:inline-block;
+	padding:10px 22px;
+	border-top:solid 3px #E7EBF0;
+	transition-property:all;
+	transition-duration:0.5s;
+	}
+#menu ul li a:hover{
+	color:#29ABC7;
+	background-color:WHITE;
+	border-top:solid 3px #29ABC7;
+	transition-property:all;
+	transition-duration:0.5s;
+	border-radius:8px;
+	}
+
+/*															  DESTAQUE
+------------------------------------------------------------------------ */
+#destaque{
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+	}
+#destaqueExp{
+	width:100%;
+	height:480px;
+	background-color:#80E3EC;
+	padding-top:20px;
+	}
+
+#slide{
+	width:1000px;
+	height:440px;
+	}
+/* Css Slider */
+#slider{
+    width:1000px; /* Largura da imagem do slide */
+    height:440px; /* Altura da imagem do slide */
+    position:relative; /* Relativo pq fica atrás */
+	overflow:hidden; /* ele não deixa criar barra de rolagem esse comando deixa barra de rolar oculto */
+	}
+#sliderContent{
+    width:410px; /* important to be same as image width or wider */
+    position:absolute;/* Absoluto pq fica na frente */
+	top:0;
+	margin-left: 0;
+	}
+.sliderImage {
+    float: left;
+    position: relative;
+	display: none;
+	}
+.sliderImage span {
+    position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 384px;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+    opacity: 0.7;
+    color: #fff;
+    display: none;
+	}
+.clear {
+	clear: both;
+	}
+.sliderImage span strong {
+    font-size: 14px;
+	}
+.top{
+	top:0;
+	left:0;
+	}
+.bottom{
+	bottom:0;
+    left:0;
+	}
+ul{list-style-type: none;}
+/*															  SERVIÇOS
+------------------------------------------------------------------------ */
+#servicos{
+	width:1000px;
+	height:300px;
+	margin:0 auto;
+	}
+#servicosExp{
+	width:100%;
+	height:300px;
+	background-color:#E7EBF1;
+	}	
+.boxServicos{
+	width:225px;
+	height:210px;
+	float:left;
+	margin-top:30px;
+	margin-right:14px;
+	margin-left:10px;
+	}
+.boxServicos a{
+	text-decoration:none;
+	font-size:13px;
+	color:#29ABC7;
+	}
+.boxServicos a:hover{
+	text-decoration:underline;
+	}
+.tituloServicos{
+	width:100%;
+	height:40px;
+	margin-bottom:20px;
+	}
+.textoServicos{
+	width:100%;
+	height:140px;
+	color:#353535;
+	}
+.iconeServicos{
+	width:40px;
+	height:40px;
+	float:left;
+	}
+.descServicos{
+	width:165px;
+	height:28px;
+	float:left;
+	margin-left:20px;
+	padding-top:12px;
+	font-weight:bold;
+	font-size:15px;	
+	}
+/*															  CONTEÚDO
+------------------------------------------------------------------------ */
+#conteudo{
+	width:1000px;
+	height:760px;
+	margin:0 auto;
+	}
+.boxTitulo{
+	width:200px;
+	height:25px;
+	margin-bottom:20px;
+	margin-top:20px;
+	}
+.inconeTitulo{
+	width:25px;
+	height:25px;
+	float:left;
+	}
+.textoTitulo{
+	width:130px;
+	height:20px;
+	float:left;
+	margin-left:20px;
+	font-size:15px;
+	font-weight:bold;
+	padding-top:5px;
+	}
+#work{
+	width:100%;
+	height:225px;
+	border-top:solid #DEE0E4;
+	border-bottom:solid	#DEE0E4;
+	}
+.frame{
+	float:left;
+	height:160px;
+	width:220px;
+	margin-top:25px;
+	margin-right:15px;
+	margin-left:13px;
+	border:1px solid #CCC;
+	}
+#imageFrame{
+	padding-top:78px;
+	}
+.imagemF{
+	width:220px;
+	height:160px;
+	}
+#clientes{
+	height:280px;
+	width:100%;
+	margin-top:20px;
+	}
+#comentarios{
+	height:280px;
+	width:450px;
+	float:left;
+	font-size:14px;
+	color:#353535;
+	}
+.negrito{
+	font-weight:bold;
+	font-style:italic;
+	}
+.negrito2{
+	font-weight:bold;
+	}
+#logo_cli{
+	height: 280px;
+	width:485px;
+	float:right;
+	}
+.box_cli{
+	float:left;
+	height:101px;
+	width:160px;
+	}
+#downloads{
+	width:100%;
+	height:140px;
+	background-color:#E8FCFD;
+	margin-top:20px;
+	border:solid 1px #81E3ED;
+	}
+#texto_down{
+	float:left;
+	height:70px;
+	width:620px;
+	margin-top:40px;
+	margin-left:20px;
+	font-size:16px;
+	color: #353535;
+	}
+#imagem_down{
+	height:60px;
+	width:242px;
+	float:right;
+	margin-right:40px;
+	margin-top:40px;
+	}
+/*															      INFO
+------------------------------------------------------------------------ */
+#info{
+	width:1000px;
+	height:190px;
+	margin:0 auto;
+	}
+#infoExp{
+	width:100%;
+	height:190px;
+	background-color:#E7EBF1;
+	}	
+.about{
+	font-size:14px;
+	color:#353535;
+	float:left;
+	height:175px;
+	width:245px;
+	margin-right:25px;
+	}
+.ebc{
+	font-size:14px;
+	color:#353535;
+	float:left;
+	height:175px;
+	width:145px;
+	margin-right:20px;
+	}
+.ebc ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;	
+	}
+.ebc ul li{
+	line-height:25px;
+	}
+.ebc ul li a{
+	text-decoration:none;
+	color:#353535;
+	}
+.ebc a:hover{
+	color:#ODODOD;
+	text-decoration:underline;
+	}
+.ebc a:visited{
+	color:#066;
+	}
+.titulo3{
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:20px;
+	height:15px;
+	width:100%;
+	margin-top:20px;
+	color:#000;
+	}
+#connect{
+	height:175px;
+	width:191px;
+	float:right;
+	}
+.icon_connect{
+	height:51px;
+	widht:62px;
+	padding-left:17px;
+	}
+
+
+/*															    RODAPÉ
+------------------------------------------------------------------------ */	
+#rodape{
+	width:1000px;
+	height:90px;
+	margin:0 auto;
+	}
+#rodapeExp{
+	width:100%;
+	height:90px;
+	background-color:#32CD99;
+	}
+#texto_rodape {
+	color: #353535;
+	float: left;
+	height: 40px;
+	width: 660px;
+	margin-top:30px;
+	}
+#texto_rodape a{
+	color:#660;
+	text-decoration:none;
+	font-style:italic;
+	}
+#logo_rodape {
+	margin-top:20px;
+	float: right;
+	height: 60px;
+	width: 175px;
+	}
+/* Segunda Pagina Container */
+#container{
+	height: 1000px;
+	width: 1000px;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-left: auto;
+	}
+.boxTitulo2{
+	width:99%;
+	height:25px;
+	margin-bottom:20px;
+	margin-top:5px;
+	padding-bottom:10px;
+	border-bottom:solid 1px #DEE0E4;
+	}
+/* Pagina Contact Us */
+#contato_left{
+	width:585px;
+	height:920px;
+	float:left;
+	}
+#contato_right{
+	width:350px;
+	height:920px;
+	float:right;
+	}
+.campo{
+	width:550px;
+	height:45px;
+	padding-left:5px;
+	border:solid 1px #CCC;
+	font-size:17px;
+	font-style:italic;
+	border-radius:5px;
+	margin-bottom:10px;
+	}
+.area{
+	width:550px;
+	height:160px;
+	padding-left:5px;
+	border:solid 1px #CCC;
+	font-size:16px;
+	font-style:italic;
+	border-radius:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+	}
+#mapa{
+	background-color: #E8FCFE;
+	padding: 10px;
+	height: 280px;
+	width: 325px;
+	border: 1px solid #9BEAF1;
+	}
+#adress{
+	width:144px;
+	height:156px;
+	margin-top:40px;
+	font-size:15px;
+	font:Arial, Helvetica, sans-serif;
+	}
+#cor{
+	color:#353535;
+	}
+.btn{
+	background-color: #29ABC7;
+	width: 160px;
+	height: 60px;
+	border: solid 1px #9BEAF1;
+	border-radius: 10px;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	font: Arial, Helvetica, sans-serif;
+	background-image: url(../Img/iconSubmit.fw.png);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	}
+.btn:hover{
+	background-color:#72DAE6;
+	cursor:pointer;
+	}
+
+/* Pagina Portfolio */
+#aba{
+	width:99%;
+	height:40px;
+	border-bottom:solid 1PX #DEE0E4;
+	margin-bottom:10px;
+	}
+.tela{
+	width:220px;
+	height:160px;
+	float:left;
+	margin-top:40px;
+	margin-right:25px;
+	margin-bottom:40px;
+	border-top:solid 1px #DEE0E4;
+	border-left:solid 1px #DEE0E4;
+	border-right:solid 1px #DEE0E4;
+	border-bottom:solid 1px #DEE0E4;
+	}
+#aba ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+#aba ul li{
+ 	display:inline;
+	}
+#aba ul li a{
+	text-decoration:none;
+	color:#000;
+	font-size:14px;
+	font-weight:bold;
+	display:inline-block;
+	padding:4px 22px;
+	font:Arial;
+	}
+#aba ul li a:hover{
+	color:#000;
+	background-color:#81E3ED;
+	display:inline-block;
+	padding:4px 22px;
+	}
+.selected{
+	background-color:#81E3ED;
+	display:inline-block;
+	padding:4px 22px;
+	}
+	
+	
+/*																					PARTE - ADMIN
+---------------------------------------------------------------------------------------------------------- */
+#admin{
+	height:150px;
+	width:300px;
+	margin-top:200px;
+	margin-left:500px;
+
+	}
+#miolo{
+	height:500px;
+	width:1000px;
+	margin:0 auto;
+	border:solid 5px #EFEFEF;
+	padding:10px;
+	border-bottom-right-radius:20px;
+	border-top-left-radius:20px;
+	}
